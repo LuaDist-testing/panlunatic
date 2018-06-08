@@ -1,18 +1,10 @@
--- This file was automatically generated for the LuaDist project.
-
 package = "panlunatic"
-version = "0.2.1-1"
+version = "1.0.0-1"
 
--- LuaDist source
 source = {
-  tag = "0.2.1-1",
-  url = "git://github.com/LuaDist-testing/panlunatic.git"
+  url = "git://github.com/tarleb/panlunatic",
+  tag = "v1.0.0",
 }
--- Original source
--- source = {
---   url = "git://github.com/tarleb/panlunatic",
---   tag = "v0.2.1",
--- }
 
 description = {
   summary = "Custom json writer for portable pandoc filtering",
