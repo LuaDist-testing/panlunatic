@@ -1,12 +1,12 @@
 --
 -- panlunatic.lua
 --
--- Copyright (c) 2016 Albert Krewinkel
+-- Copyright (c) 2016-2017 Albert Krewinkel
 --
 -- This library is free software; you can redistribute it and/or modify it
 -- under the terms of the ISC license. See LICENSE for details.
 
-local panlunatic = {_version = "0.1.3"}
+local panlunatic = {_version = "0.2.1"}
 
 local json = require("dkjson")
 
@@ -294,6 +294,7 @@ function panlunatic.DefinitionList(items)
 end
 
 function panlunatic.CaptionedImage(src, tit, caption, attr)
+  attr = attr or {id = "", class = ""} -- workaround for issue jgm/pandoc#2697
   return panlunatic.Para(Image(caption, src, tit, attr):sub(1, -1))
 end
 
